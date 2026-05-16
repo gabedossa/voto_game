@@ -1,0 +1,19 @@
+# Game/local runtime files
+save.json
+prefs.json
+*.log
+*.tmp
+
+# Build/export output
+build/
+builds/
+output/
+exports/
+
+# IDE/system files
+.vs/
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
