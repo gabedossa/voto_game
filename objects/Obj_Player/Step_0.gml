@@ -16,7 +16,7 @@ if (stage_clear) {
 
         // Dispara o diálogo de conclusão do minigame ao voltar ao overworld
 		
-        dialog_start("Candidato", [
+        dialog_start("Luisa", [
             "Hoje, milhoes de brasileiros convivem com ruas e estradas esburacadas.",
             "No campo, isso significa perda de safra, dificuldade para escoar producao",
             "e ambulancias que nao chegam.",
@@ -268,10 +268,10 @@ if (_dx != 0 && _dy != 0) {
 // ============================================================
 // HITBOX DO PLAYER NO MODO RPG (top-down isométrico)
 // ============================================================
-var _hit_left   = -6;
-var _hit_right  =  6;
-var _hit_top    = -4;
-var _hit_bottom =  8;
+var _hit_left   = -8;
+var _hit_right  =  16;
+var _hit_top    = -8;
+var _hit_bottom =  15;
 
 // Lista de objetos que bloqueiam o movimento do player
 var _blockers = [
