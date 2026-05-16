@@ -41,6 +41,7 @@
   },
   "resources": [
     {"id":{"name":"Fundo_jogo","path":"sprites/Fundo_jogo/Fundo_jogo.yy",},},
+    {"id":{"name":"Anim_flameando","path":"sprites/Anim_flameando/Anim_flameando.yy",},},
     {"id":{"name":"Sprite32","path":"sprites/Sprite32/Sprite32.yy",},},
     {"id":{"name":"Obj_cama","path":"objects/Obj_cama/Obj_cama.yy",},},
     {"id":{"name":"obj_pause_menu","path":"objects/obj_pause_menu/obj_pause_menu.yy",},},
@@ -48,6 +49,7 @@
     {"id":{"name":"barraca_de_leite","path":"sprites/barraca_de_leite/barraca_de_leite.yy",},},
     {"id":{"name":"obj_Calvo_barbudo_bravo","path":"objects/obj_Calvo_barbudo_bravo/obj_Calvo_barbudo_bravo.yy",},},
     {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
+    {"id":{"name":"Bandeira_flameando","path":"objects/Bandeira_flameando/Bandeira_flameando.yy",},},
     {"id":{"name":"Grass","path":"tilesets/Grass/Grass.yy",},},
     {"id":{"name":"obj_sleep_screen","path":"objects/obj_sleep_screen/obj_sleep_screen.yy",},},
     {"id":{"name":"scr_dialog","path":"scripts/scr_dialog/scr_dialog.yy",},},
@@ -152,6 +154,7 @@
     {"id":{"name":"obj_npc_antonio","path":"objects/obj_npc_antonio/obj_npc_antonio.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"Cliff_Tile","path":"sprites/Cliff_Tile/Cliff_Tile.yy",},},
+    {"id":{"name":"Bandeira_Brasil","path":"sprites/Bandeira_Brasil/Bandeira_Brasil.yy",},},
     {"id":{"name":"obj_animal_vaca","path":"objects/obj_animal_vaca/obj_animal_vaca.yy",},},
     {"id":{"name":"Path_Middle","path":"sprites/Path_Middle/Path_Middle.yy",},},
     {"id":{"name":"Sprite41","path":"sprites/Sprite41/Sprite41.yy",},},

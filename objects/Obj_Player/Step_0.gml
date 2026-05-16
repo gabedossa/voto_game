@@ -14,6 +14,19 @@ if (stage_clear) {
         stage_clear = false;
         can_move    = true;
 
+        // Dispara o diálogo de conclusão do minigame ao voltar ao overworld
+		
+        dialog_start("Candidato", [
+            "Hoje, milhoes de brasileiros convivem com ruas e estradas esburacadas.",
+            "No campo, isso significa perda de safra, dificuldade para escoar producao",
+            "e ambulancias que nao chegam.",
+            "Nas cidades, significa acidentes, prejuizo aos motoristas,",
+            "transporte publico mais lento e abandono.",
+            "Meu governo vai lancar o Programa Nacional de Recuperacao Viaria,",
+            "unindo municipios, estados e Uniao para melhorar ruas urbanas",
+            "e estradas rurais com planejamento e manutencao continua."
+        ]);
+
         room_goto(rm_overworld);
     }
 
@@ -62,11 +75,11 @@ if (room == rm_room_minigame) {
     // --- Chegou ao fim da fase ---
     if (place_meeting(x, y, obj_fim_fase)) {
 
-        stage_clear  = true;
-        stage_timer  = room_speed;
-        spd_x        = 0;
-        spd_y        = 0;
-        can_move     = false;
+        stage_clear = true;
+        stage_timer = room_speed;
+        spd_x       = 0;
+        spd_y       = 0;
+        can_move    = false;
 
         // Converte moedas em dinheiro e zera o contador
         global.money += moedas * 10;
@@ -96,15 +109,15 @@ if (room == rm_room_minigame) {
               || keyboard_check_pressed(ord("W"));
 
     if (_left) {
-        spd_x         = -vel_plataforma;
-        sprite_index  = spr_luisa_lado;
-        image_xscale  = 1;
+        spd_x        = -vel_plataforma;
+        sprite_index = spr_luisa_lado;
+        image_xscale = 1;
     }
 
     if (_right) {
-        spd_x         = vel_plataforma;
-        sprite_index  = spr_luisa_lado;
-        image_xscale  = -1;
+        spd_x        = vel_plataforma;
+        sprite_index = spr_luisa_lado;
+        image_xscale = -1;
     }
 
     // --- Verifica se o player está no chão ---
@@ -254,13 +267,11 @@ if (_dx != 0 && _dy != 0) {
 
 // ============================================================
 // HITBOX DO PLAYER NO MODO RPG (top-down isométrico)
-// X estreito para movimento lateral fluido;
-// Y mais alto para representar a profundidade isométrica.
 // ============================================================
-var _hit_left   = -8;  // 16px de largura total no eixo X
-var _hit_right  =  8;
-var _hit_top    = -8;  // 23px de altura total no eixo Y
-var _hit_bottom =  15;
+var _hit_left   = -6;
+var _hit_right  =  6;
+var _hit_top    = -4;
+var _hit_bottom =  8;
 
 // Lista de objetos que bloqueiam o movimento do player
 var _blockers = [
@@ -285,7 +296,7 @@ repeat (ceil(abs(_move_x))) {
     for (var _i = 0; _i < array_length(_blockers); _i++) {
         if (
             collision_rectangle(
-                _test_x + _hit_left,   // sem offsets extras — hitbox centrada no player
+                _test_x + _hit_left,
                 y       + _hit_top,
                 _test_x + _hit_right,
                 y       + _hit_bottom,
