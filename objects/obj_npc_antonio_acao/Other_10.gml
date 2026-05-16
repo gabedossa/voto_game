@@ -1,11 +1,10 @@
-// =============================================================
-// obj_npc_antonio — User Event 0
-// =============================================================
+// obj_npc_antonio_acao - User Event 0
+// Controla a conversa do Sr. Antonio e libera o minigame no dia 2.
+
 if (global.dialog_active) {
     exit;
 }
 
-// ── DIA 1 ──────────────────────────────────────────────────────
 if (global.day == 1 && !talked_today) {
 
     talked_today = true;
@@ -24,27 +23,31 @@ if (global.day == 1 && !talked_today) {
 if (global.day == 1 && talked_today) {
 
     dialog_start("Sr. Antonio", [
-        "Oi Luíza, hoje temos tomates fresquinhos, fique a vontade para olhar.", 
-		"Não fazemos uso de agrotóxicos nos nossos tomates, na verdade usamos joaninhas para comer os pulgões que tentam comer nossas plantas, é um método natural de defender as plantações. "
+        "Oi Luisa, hoje temos tomates fresquinhos.",
+        "Fique a vontade para olhar.",
+        "Nao usamos agrotoxicos nos tomates.",
+        "Usamos joaninhas para comer os pulgoes",
+        "que tentam atacar as plantacoes."
     ]);
 
     exit;
 }
 
-// ── DIA 2 — abre o minigame ───────────────────────────────────
 if (global.day == 2 && !flag_get("missao1_programa")) {
 
     flag_set("missao1_programa", true);
     talked_today = true;
 
     dialog_start("Sr. Antonio", [
-       " bom dia luiza, como vai? Hoje eu infelizmente não tenho nada para vender. ",
-		"as estradas tem muitos buracos e problemas, o transporte de mercadorias está quase impossível, meus produtos se perderam pela estrada novamente.",
-		"Me ajude a recuperar meus produtos por favor!"
+        "Bom dia, Luisa, como vai?",
+        "Hoje infelizmente nao tenho nada para vender.",
+        "As estradas estao cheias de buracos e problemas.",
+        "O transporte das mercadorias ficou quase impossivel.",
+        "Meus produtos se perderam pela estrada novamente.",
+        "Me ajude a recuperar meus produtos, por favor!"
     ]);
 
     flag_set("iniciar_minigame", true);
-
     alarm[0] = -1;
 
     exit;
@@ -58,17 +61,15 @@ if (
 
     dialog_start("Sr. Antonio", [
         "Vamos la, Luisa!",
-        "Jogue o mini-game e me ajude com o programa."
+        "Jogue o mini-game e me ajude com os produtos."
     ]);
 
     flag_set("iniciar_minigame", true);
-
     alarm[0] = -1;
 
     exit;
 }
 
-// ── DIA 3 ──────────────────────────────────────────────────────
 if (
     global.day == 3
     && !flag_get("missao1_completa")
@@ -79,7 +80,8 @@ if (
     dialog_start("Sr. Antonio", [
         "Luisa, deu certo!",
         "Muita gente assistiu ao programa.",
-        "Algumas pessoas ate pediram desculpas pelo jeito que falavam da vida no campo.",
+        "Algumas pessoas ate pediram desculpas",
+        "pelo jeito que falavam da vida no campo.",
         "Voce ajudou a mostrar que o produtor rural merece respeito."
     ]);
 
