@@ -3,9 +3,9 @@ var _H  = display_get_gui_height();
 var _cx = _W / 2;
 var _cy = _H / 2;
 
-var _fnt_bold   = asset_get_index("fnt_bold");
+var _fnt_bold   = asset_get_index("fnt_normal");
 var _fnt_normal = asset_get_index("fnt_normal");
-var _fnt_small  = asset_get_index("fnt_small");
+var _fnt_small  = asset_get_index("fnt_normal");
 
 var _alpha;
 if (phase == "fade_out") {

@@ -38,7 +38,7 @@ function day_cycle_init() {
     }
 
     if (!variable_global_exists("time_name")) {
-        global.time_name = "Manha";
+        global.time_name = "Manhã";
     }
 
     if (!variable_global_exists("is_night")) {
@@ -71,7 +71,7 @@ function day_cycle_update() {
     }
 
     if (global.hour < 12) {
-        global.time_name = "Manha";
+        global.time_name = "Manhã";
         global.is_night = false;
     }
     else if (global.hour < 18) {

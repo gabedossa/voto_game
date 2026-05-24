@@ -1,6 +1,6 @@
 // Mostra dica "Z para entrar" quando player está perto
 if (place_meeting(x, y, obj_player)) {
-    var _fnt = asset_get_index("fnt_small");
+    var _fnt = asset_get_index("fnt_normal");
     draw_set_font(_fnt);
     draw_set_halign(fa_center);
     draw_set_color(c_white);
