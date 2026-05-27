@@ -38,7 +38,7 @@ function day_cycle_init() {
     }
 
     if (!variable_global_exists("time_name")) {
-        global.time_name = "Manhã";
+        global.time_name = "Manh" + chr(227);
     }
 
     if (!variable_global_exists("is_night")) {
@@ -71,7 +71,7 @@ function day_cycle_update() {
     }
 
     if (global.hour < 12) {
-        global.time_name = "Manhã";
+        global.time_name = "Manh" + chr(227);
         global.is_night = false;
     }
     else if (global.hour < 18) {
@@ -115,7 +115,7 @@ function end_day() {
         global.minute     = 0;
         global.time_timer = 0;
         global.day_ended  = false;
-        global.time_name  = "Manha";
+        global.time_name  = "Manh" + chr(227);
         global.is_night   = false;
 
         show_debug_message("DORMIU - NOVO DIA: " + string(global.day));

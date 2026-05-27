@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_nescow_A",
+  "name": "obj_televisao",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,10 +9,7 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "obj_vaca_base",
-    "path": "objects/obj_vaca_base/obj_vaca_base.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "vaca_leite_com_chocolate_fofa_1",
-    "path": "sprites/vaca_leite_com_chocolate_fofa_1/vaca_leite_com_chocolate_fofa_1.yy",
+    "name": "televisao_png",
+    "path": "sprites/televisao_png/televisao_png.yy",
   },
   "spriteMaskId": null,
   "visible": true,

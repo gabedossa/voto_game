@@ -5,7 +5,7 @@
 function hud_draw() {
     var _fnt_bold  = asset_get_index("fnt_normal");
     var _fnt_small = asset_get_index("fnt_normal");
-	    var _fnt_normal = asset_get_index("fnt_normal");
+	var _fnt_normal = asset_get_index("fnt_normal");
     var _gui_h     = display_get_gui_height();
 
     if (!variable_global_exists("energy_max") || global.energy_max <= 0) {
@@ -18,7 +18,7 @@ function hud_draw() {
 
     var _energy_pct = clamp(global.energy / global.energy_max, 0, 1);
 
-    draw_set_font(-1);
+    draw_set_font(_fnt_normal);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
 
@@ -58,7 +58,7 @@ function hud_draw() {
     draw_set_color(make_color_rgb(255, 238, 196));
     draw_text(32, 32, "Dia: " + string(global.day));
     draw_text(32, 56, "Hora: " + get_time_string());
-    draw_text(32, 80, "Periodo: " + string(global.time_name));
+    draw_text(32, 80, "Per"+ chr(237)+"odo: " + string(global.time_name));
     draw_text(32, 104, "Dinheiro: R$ " + string(global.money));
 
     var _bar_x = 24;
