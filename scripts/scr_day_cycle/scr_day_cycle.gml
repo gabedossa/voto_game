@@ -8,7 +8,7 @@ function day_cycle_init() {
     if (!variable_global_exists("hour"))      { global.hour = 6; }
     if (!variable_global_exists("minute"))    { global.minute = 0; }
 
-    global.time_speed = 5;
+    global.time_speed = 30;
 
     if (!variable_global_exists("time_timer")) { global.time_timer = 0; }
     if (!variable_global_exists("day_ended"))  { global.day_ended = false; }
