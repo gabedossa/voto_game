@@ -40,6 +40,7 @@ var _room_sleep = asset_get_index("room_sleep_screen");
 
 if (!global.game_paused && room != _room_menu && room != _room_sleep) {
     day_cycle_update();
+	show_debug_message("paused: " + string(global.game_paused) + " | hora: " + string(global.hour) + ":" + string(global.minute));
 }
 
 if (variable_global_exists("dialog_active") && global.dialog_active) {
