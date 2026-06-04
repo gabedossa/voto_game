@@ -124,6 +124,7 @@
     {"name":"inst_14538F5E","path":"rooms/rm_overworld/rm_overworld.yy",},
     {"name":"inst_5EB5F652","path":"rooms/rm_overworld/rm_overworld.yy",},
     {"name":"inst_206C61DA","path":"rooms/rm_overworld/rm_overworld.yy",},
+    {"name":"inst_54F38AB","path":"rooms/rm_overworld/rm_overworld.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -152,6 +153,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49DA1423","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_galinha_marrom","path":"objects/obj_galinha_marrom/obj_galinha_marrom.yy",},"properties":[],"rotation":0.0,"scaleX":0.87499994,"scaleY":0.87499994,"x":952.0,"y":496.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F43CC36","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_galo","path":"objects/obj_galo/obj_galo.yy",},"properties":[],"rotation":0.0,"scaleX":0.87499994,"scaleY":0.87499994,"x":960.0,"y":464.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14538F5E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_effect_time_light","path":"objects/obj_effect_time_light/obj_effect_time_light.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":16.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54F38AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cloud_meneger","path":"objects/obj_cloud_meneger/obj_cloud_meneger.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":200.0,"y":8.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Bandeira","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_62A72830","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Anim_flameando","path":"sprites/Anim_flameando/Anim_flameando.yy",},"x":1216.0,"y":928.0,},

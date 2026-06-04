@@ -85,3 +85,4 @@ if (room == rm_overworld && _snd >= 0) {
 }
 
 show_debug_message("GAME MANAGER CRIADO - DIA ATUAL: " + string(global.day));
+window_set_fullscreen(true);
