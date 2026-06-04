@@ -219,81 +219,63 @@ if (menu_state == "confirm_new" || menu_state == "confirm_quit") {
     draw_set_color(c_black);
     draw_rectangle(0, 0, _W, _H, false);
     draw_set_alpha(1);
-
     var _pw = 380;
     var _ph = 160;
     var _px = _cx - _pw / 2;
     var _py = _cy - _ph / 2;
-
     draw_set_color(make_color_rgb(100, 65, 30));
     draw_roundrect_ext(_px, _py, _px + _pw, _py + _ph, 10, 10, false);
-
     draw_set_alpha(0.08);
-
     for (var wy = 0; wy < _ph; wy += 5) {
         var _wood_color_confirm;
-
         if (wy mod 10 == 0) {
             _wood_color_confirm = make_color_rgb(60, 35, 10);
         } else {
             _wood_color_confirm = make_color_rgb(140, 95, 45);
         }
-
         draw_set_color(_wood_color_confirm);
         draw_rectangle(_px + 4, _py + wy, _px + _pw - 4, _py + wy + 2, false);
     }
-
     draw_set_alpha(1);
     draw_set_color(make_color_rgb(200, 150, 60));
     draw_roundrect_ext(_px, _py, _px + _pw, _py + _ph, 10, 10, true);
-
     var _msg = "";
-
     if (menu_state == "confirm_new") {
         _msg = loc("confirm_new_game");
     } else {
         _msg = loc("confirm_quit");
     }
-
     draw_set_font(_fnt_normal);
     draw_set_color(make_color_rgb(255, 230, 180));
     draw_set_halign(fa_center);
     draw_text_ext_transformed(_cx, _py + 40, _msg, 20, _pw - 40, 1, 1, 0);
-
     var _opts = [
         loc("confirm_yes"),
         loc("confirm_no")
     ];
-
     for (var i = 0; i < 2; i++) {
         var _bx2 = _px + 50 + i * 190;
         var _by2 = _py + _ph - 55;
         var _act = (selected_option == i);
-
         if (_act) {
             draw_set_alpha(0.9);
-
             if (i == 0) {
-                draw_set_color(make_color_rgb(160, 60, 40));
-            } else {
                 draw_set_color(make_color_rgb(50, 120, 60));
+            } else {
+                draw_set_color(make_color_rgb(160, 60, 40));
             }
         } else {
             draw_set_alpha(0.4);
             draw_set_color(make_color_rgb(80, 55, 25));
         }
-
         draw_roundrect_ext(_bx2, _by2, _bx2 + 120, _by2 + 32, 6, 6, false);
         draw_set_alpha(1);
-
         draw_set_font(_fnt_bold);
-
         if (_act) {
             draw_set_color(c_white);
         } else {
             draw_set_color(make_color_rgb(180, 150, 100));
         }
-
         draw_set_halign(fa_center);
         draw_text_transformed(_bx2 + 60, _by2 + 8, _opts[i], 1, 1, 0);
     }
