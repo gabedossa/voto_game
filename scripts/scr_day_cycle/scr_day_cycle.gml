@@ -59,16 +59,14 @@ function day_cycle_update() {
 function get_light_overlay() {
     var _t = global.hour * 60 + global.minute;
 
-    // ── Keyframes do dia: [minuto, alpha, cor_escurecimento, cor_tint, tint_amt] ──
-    // A cor do escurecimento é sempre baseada no tom da noite, só muda a intensidade,
-    // o que evita saltos de cor. O clima vem do tint.
-    var _night_col = make_color_rgb(15, 25, 55);
-    var _dawn_col  = make_color_rgb(255, 160, 110);
-    var _noon_col  = make_color_rgb(255, 240, 200);
-    var _dusk_col  = make_color_rgb(255, 130, 70);
+    // Paleta
+    var _night_col  = make_color_rgb(15, 25, 55);
+    var _dawn_col   = make_color_rgb(255, 160, 110);
+    var _noon_col   = make_color_rgb(255, 160, 110);   // mesma cor do dawn
+    var _dusk_col   = make_color_rgb(255, 130, 70);
     var _night_tint = make_color_rgb(50, 70, 130);
 
-    // pontos: tempo (min), alpha, tint_color, tint_amt
+    // pontos: [tempo (min), alpha, tint_color, tint_amt]
     var _keys = [
         [0,    0.45, _night_tint, 0.20],  // meia-noite
         [300,  0.45, _night_tint, 0.20],  // 05:00 ainda noite
@@ -106,7 +104,6 @@ function get_light_overlay() {
     var _tint     = merge_color(_a_key[2], _b_key[2], _f);
     var _tint_amt = lerp(_a_key[3], _b_key[3], _f);
 
-    // cor do escurecimento é sempre a noite (intensidade dada pelo alpha)
     var _col = _night_col;
 
     return { alpha: _alpha, color: _col, tint: _tint, tint_amt: _tint_amt };

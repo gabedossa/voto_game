@@ -16,17 +16,16 @@ if (stage_clear) {
 
         // Dispara o diálogo de conclusão do minigame ao voltar ao overworld
 		
-        dialog_start("Luisa", [
-            "Hoje, milhoes de brasileiros convivem com ruas e estradas esburacadas.",
-            "No campo, isso significa perda de safra, dificuldade para escoar producao",
-            "e ambulancias que nao chegam.",
-            "Nas cidades, significa acidentes, prejuizo aos motoristas,",
-            "transporte publico mais lento e abandono.",
-            "Meu governo vai lancar o Programa Nacional de Recuperacao Viaria,",
-            "unindo municipios, estados e Uniao para melhorar ruas urbanas",
-            "e estradas rurais com planejamento e manutencao continua."
-        ]);
-
+dialog_start("Luisa", [
+    "Hoje, milh" + chr(245) + "es de brasileiros convivem com ruas e estradas esburacadas.",
+    "No campo, isso significa perda de safra, dificuldade para escoar produ" + chr(231) + chr(227) + "o",
+    "e ambul" + chr(226) + "ncias que n" + chr(227) + "o chegam.",
+    "Nas cidades, significa acidentes, preju" + chr(237) + "zo aos motoristas,",
+    "transporte p" + chr(250) + "blico mais lento e abandono.",
+    "Meu governo vai lan" + chr(231) + "ar o Programa Nacional de Recupera" + chr(231) + chr(227) + "o Vi" + chr(225) + "ria,",
+    "unindo munic" + chr(237) + "pios, estados e Uni" + chr(227) + "o para melhorar ruas urbanas",
+    "e estradas rurais com planejamento e manuten" + chr(231) + chr(227) + "o cont" + chr(237) + "nua."
+]);
         room_goto(rm_overworld);
     }
 

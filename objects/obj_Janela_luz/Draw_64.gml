@@ -34,17 +34,3 @@ for (var i = _layers; i >= 1; i--) {
 gpu_set_blendmode(bm_normal);
 draw_set_alpha(1);
 draw_set_color(c_white);
-
-// Várias camadas concêntricas pra criar o degradê suave
-var _layers = 6;
-for (var i = _layers; i >= 1; i--) {
-    var _f = i / _layers;            // 1.0 (fora) -> 0.16 (centro)
-    var _a = (1 - _f) * 0.25 * _intensity;
-    draw_set_alpha(_a);
-    draw_set_color(glow_color);
-    draw_circle(_sx, _sy, _r * _f, false);
-}
-
-gpu_set_blendmode(bm_normal);
-draw_set_alpha(1);
-draw_set_color(c_white);
