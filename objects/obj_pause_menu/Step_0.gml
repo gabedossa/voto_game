@@ -29,12 +29,12 @@ if (keyboard_check_pressed(vk_enter)) {
             obj_player.can_move = true;
         break;
         case 1:
-            save_game();
+            //tirando a opção de salvar o jogo
         break;
         case 2:
             dialog_start("Sistema", [
-                "Configuracoes ainda em desenvolvimento.",
-                "Em breve: volume, resolucao e controles."
+                "Configura" + chr(231) + chr(245) + "es ainda em desenvolvimento.",
+				"Em breve: volume, resolu" + chr(231) + chr(227) + "o e controles."
             ]);
             is_open             = false;
             global.game_paused  = false;
