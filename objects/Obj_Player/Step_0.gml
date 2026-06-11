@@ -403,12 +403,12 @@ if (keyboard_check_pressed(ord("Z"))) {
             _npc_talk = collision_circle(x + _ox, y + _oy, 28, obj_Ana, false, true);
             if (_npc_talk != noone) {
                 dialog_start("Ana", [
-                    "O comercio de flores no Brasil e muito rico em variedades,",
-                    "mas voce sabia que muitas plantas nao sao apenas decorativas?",
-                    "Pelo contrario, muitas possuem outras utilidades,",
-                    "como, por exemplo, a babosa.",
-                    "Alem de decorativa, ela pode ser usada na producao",
-                    "de mascaras de cabelo caseiras."
+                    "O com" + chr(233) + "rcio de flores no Brasil " + chr(233) + " muito rico em variedades,",
+"mas voc" + chr(234) + " sabia que muitas plantas n" + chr(227) + "o s" + chr(227) + "o apenas decorativas?",
+"Pelo contr" + chr(225) + "rio, muitas possuem outras utilidades,",
+"como, por exemplo, a babosa.",
+"Al" + chr(233) + "m de decorativa, ela pode ser usada na produ" + chr(231) + chr(227) + "o",
+"de m" + chr(225) + "scaras de cabelo caseiras."
                 ]);
             }
 
@@ -417,13 +417,13 @@ if (keyboard_check_pressed(ord("Z"))) {
                 _npc_talk = collision_circle(x + _ox, y + _oy, 28, obj_Loira, false, true);
                 if (_npc_talk != noone) {
                     dialog_start("Loira", [
-                        "Antigamente, o queijo era uma forma de nao desperdicar leite,",
-                        "ja que ele estraga rapido.",
-                        "Transformando em queijo, dava pra conservar por mais tempo,",
-                        "tipo uma tecnologia antiga de sobrevivencia.",
-                        "Antes do queijo chegar a mesa, tem muito trabalho no campo.",
-                        "O agro cuida das vacas que produzem o leite",
-                        "que usamos para fazer os queijos."
+                        "Antigamente, o queijo era uma forma de n" + chr(227) + "o desperdi" + chr(231) + "ar leite,",
+"j" + chr(225) + " que ele estraga r" + chr(225) + "pido.",
+"Transformando em queijo, dava pra conservar por mais tempo,",
+"tipo uma tecnologia antiga de sobreviv" + chr(234) + "ncia.",
+"Antes do queijo chegar " + chr(224) + " mesa, tem muito trabalho no campo.",
+"O agro cuida das vacas que produzem o leite",
+"que usamos para fazer os queijos."
                     ]);
                 }
             }
@@ -433,13 +433,13 @@ if (keyboard_check_pressed(ord("Z"))) {
                 _npc_talk = collision_circle(x + _ox, y + _oy, 28, obj_Calvo_barbudo_bravo, false, true);
                 if (_npc_talk != noone) {
                     dialog_start("Velho Barbudo", [
-                        "A farinha de trigo e um ingrediente essencial",
-                        "para a fabricacao de paes.",
-                        "Mas para a farinha existir, as plantacoes de trigo",
-                        "sao essenciais.",
-                        "Sem o agro plantando nosso trigo, seria impossivel",
-                        "fazer nosso paezinhos.",
-                        "Imagina como seria triste um cafe da manha sem paezinhos."
+                       "A farinha de trigo " + chr(233) + " um ingrediente essencial",
+"para a fabrica" + chr(231) + chr(227) + "o de p" + chr(227) + "es.",
+"Mas para a farinha existir, as planta" + chr(231) + chr(245) + "es de trigo",
+"s" + chr(227) + "o essenciais.",
+"Sem o agro plantando nosso trigo, seria imposs" + chr(237) + "vel",
+"fazer nosso p" + chr(227) + "ezinhos.",
+"Imagina como seria triste um caf" + chr(233) + " da manh" + chr(227) + " sem p" + chr(227) + "ezinhos."
                     ]);
                 }
             }
@@ -449,12 +449,12 @@ if (keyboard_check_pressed(ord("Z"))) {
                 _npc_talk = collision_circle(x + _ox, y + _oy, 28, obj_Velhinha, false, true);
                 if (_npc_talk != noone) {
                     dialog_start("Velhinha", [
-                        "Na promocao de hoje, ao comprar um tambaqui,",
-                        "voce ganha um pintado.",
-                        "Esses peixes que estao para a venda nao sao apenas peixes,",
-                        "sao a fonte de sustento de muitas familias.",
-                        "Gracas ao comercio de peixes, posso viver bem",
-                        "com a minha familia, e criar meus filhos e netos."
+                        "Na promo" + chr(231) + chr(227) + "o de hoje, ao comprar um tambaqui,",
+"voc" + chr(234) + " ganha um pintado.",
+"Esses peixes que est" + chr(227) + "o para a venda n" + chr(227) + "o s" + chr(227) + "o apenas peixes,",
+"s" + chr(227) + "o a fonte de sustento de muitas fam" + chr(237) + "lias.",
+"Gra" + chr(231) + "as ao com" + chr(233) + "rcio de peixes, posso viver bem",
+"com a minha fam" + chr(237) + "lia, e criar meus filhos e netos."
                     ]);
                 }
             }

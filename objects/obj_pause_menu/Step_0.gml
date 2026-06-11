@@ -17,6 +17,7 @@ anim_t = min(1, anim_t + 0.12);
 
 if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")))
     selected_option = (selected_option + 1) mod total_options;
+
 if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W")))
     selected_option = (selected_option - 1 + total_options) mod total_options;
 
@@ -50,5 +51,5 @@ if (keyboard_check_pressed(vk_enter)) {
             game_end();
         break;
     }
-	show_debug_message("pause selected_option: " + string(selected_option) + " is_open: " + string(is_open));
+    show_debug_message("pause selected_option: " + string(selected_option) + " is_open: " + string(is_open));
 }
